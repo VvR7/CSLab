@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 21 15:41:15 2024
+# Process ID: 28024
+# Current directory: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22796 D:\college\Computer_Lab\Multi_CPU\CPU_basys3\CPU_basys3\CPU_basys3.xpr
+# Log file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/vivado.log
+# Journal file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list CLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Reset]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[3]}]]
+set_property package_pin "" [get_ports [list  {display[2]}]]
+set_property package_pin "" [get_ports [list  {display[2]}]]
+place_ports {SW[2]} R2
+place_ports {SW[1]} T1
+place_ports {SW[0]} U1
+set_property package_pin "" [get_ports [list  {AN[3]}]]
+place_ports {AN[3]} W4
+place_ports {AN[2]} V4
+place_ports {AN[1]} U4
+place_ports {AN[0]} U2
+place_ports {display[0]} W7
+place_ports {display[1]} W6
+place_ports {display[2]} U8
+place_ports {display[3]} V8
+place_ports {display[4]} U5
+place_ports {display[5]} V5
+place_ports {display[6]} U7
+place_ports {display[7]} V7
+place_ports Reset V17
+set_property package_pin "" [get_ports [list  CLK]]
+place_ports CLK T17
+startgroup
+set_property package_pin "" [get_ports [list  CLK]]
+place_ports button T17
+endgroup
+file mkdir D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new
+close [ open D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new/constrants.xdc w ]
+add_files -fileset constrs_1 D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new/constrants.xdc
+set_property target_constrs_file D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new/constrants.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+place_ports CLK W5
+save_constraints -force
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+open_hw_target
+set_property PROGRAM.FILE {D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

@@ -1,0 +1,16 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.sim/sim_1/behav/xsim/glbl.v,1513215260,verilog,,,,glbl,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sim_1/new/CPU_tb.v,1731591236,verilog,,,,CPU_tb,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/ALU.v,1731402062,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/CPU.v,,ALU,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/CPU.v,1731919576,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Control.v,,CPU,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Control.v,1732850751,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Data_mem.v,,Control,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Data_mem.v,1731585928,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Ext_16_to_32.v,,Data_mem,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Ext_16_to_32.v,1731585080,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Ins_Mem.v,,Ext_16_to_32,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Ins_Mem.v,1731929171,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/PC.v,,Ins_Mem,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/PC.v,1731641464,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Reg_file.v,,PC,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/Reg_file.v,1731590958,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/mul_32.v,,Reg_file,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/mul_32.v,1731585010,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/mul_5.v,,mul_32,,,,,,,,
+D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sources_1/new/mul_5.v,1731585010,verilog,,D:/college/Computer_Lab/CPU_mips/CPU/CPU.srcs/sim_1/new/CPU_tb.v,,mul_5,,,,,,,,

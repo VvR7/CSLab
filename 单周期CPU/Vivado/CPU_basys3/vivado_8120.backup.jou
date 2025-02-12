@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Nov 25 17:14:04 2024
+# Process ID: 8120
+# Current directory: D:/college/Computer_Lab/CPU_mips/CPU_basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21832 D:\college\Computer_Lab\CPU_mips\CPU_basys3\CPU_basys3.xpr
+# Log file: D:/college/Computer_Lab/CPU_mips/CPU_basys3/vivado.log
+# Journal file: D:/college/Computer_Lab/CPU_mips/CPU_basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/college/Computer_Lab/CPU_mips/CPU_basys3/CPU_basys3.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+open_hw_target
+set_property PROGRAM.FILE {D:/college/Computer_Lab/CPU_mips/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/college/Computer_Lab/CPU_mips/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+open_hw_target
+set_property PROGRAM.FILE {D:/college/Computer_Lab/CPU_mips/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/college/Computer_Lab/CPU_mips/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

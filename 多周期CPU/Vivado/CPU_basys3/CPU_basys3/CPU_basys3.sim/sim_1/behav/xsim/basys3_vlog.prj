@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CPU_basys3.srcs/sources_1/new/ALU.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/CPU.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Control.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Data_Mem.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Ext_16_to_32.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Ins_Mem.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Mul_2_32.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Mul_3_5.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Mux_4_32.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/PC.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Reg_file.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/Tem_Reg.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/button_debounce.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/display_7seg.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/frequency_divider.v" \
+"../../../../CPU_basys3.srcs/sources_1/new/CPU_basys3.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

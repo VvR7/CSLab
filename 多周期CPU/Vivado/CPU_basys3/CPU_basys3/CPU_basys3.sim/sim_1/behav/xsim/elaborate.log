@@ -1,0 +1,31 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 78d1b73dc9514b5ba6b281ddc6033894 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Wre [D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/sources_1/new/CPU.v:33]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Wre [D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/sources_1/new/CPU.v:34]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Wre [D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/sources_1/new/CPU.v:35]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Wre [D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/sources_1/new/CPU.v:36]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.button_debounce
+Compiling module xil_defaultlib.Tem_Reg
+Compiling module xil_defaultlib.Mul_2_32
+Compiling module xil_defaultlib.Mul_3_5
+Compiling module xil_defaultlib.Ext_16_to_32
+Compiling module xil_defaultlib.Mux_4_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Ins_Mem
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Data_mem
+Compiling module xil_defaultlib.Reg_file
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.display_7seg
+Compiling module xil_defaultlib.frequency_divider
+Compiling module xil_defaultlib.basys3
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot basys3_behav

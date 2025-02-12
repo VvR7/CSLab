@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Dec 17 17:20:39 2024
+# Process ID: 9908
+# Current directory: D:/college/Computer_Lab/Multi_CPU/CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5264 D:\college\Computer_Lab\Multi_CPU\CPU\CPU.xpr
+# Log file: D:/college/Computer_Lab/Multi_CPU/CPU/vivado.log
+# Journal file: D:/college/Computer_Lab/Multi_CPU/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/college/Computer_Lab/Multi_CPU/CPU/CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+save_project_as CPU_basys3 D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3 -force
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 17:21:40 2024...

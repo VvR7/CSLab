@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 21 16:13:09 2024
+# Process ID: 1472
+# Current directory: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/synth_1
+# Command line: vivado.exe -log basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
+# Log file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/synth_1/basys3.vds
+# Journal file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basys3.tcl -notrace

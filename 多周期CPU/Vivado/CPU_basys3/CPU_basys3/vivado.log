@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 21 15:41:15 2024
+# Process ID: 28024
+# Current directory: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22796 D:\college\Computer_Lab\Multi_CPU\CPU_basys3\CPU_basys3\CPU_basys3.xpr
+# Log file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/vivado.log
+# Journal file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+[Sat Dec 21 15:46:13 2024] Launched synth_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 1764 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1284.785 ; gain = 396.168
+launch_runs impl_1 -jobs 10
+[Sat Dec 21 15:54:52 2024] Launched impl_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list CLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Reset]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {display[3]}]]
+set_property package_pin "" [get_ports [list  {display[2]}]]
+set_property package_pin "" [get_ports [list  {display[2]}]]
+place_ports {SW[2]} R2
+place_ports {SW[1]} T1
+place_ports {SW[0]} U1
+set_property package_pin "" [get_ports [list  {AN[3]}]]
+place_ports {AN[3]} W4
+place_ports {AN[2]} V4
+place_ports {AN[1]} U4
+place_ports {AN[0]} U2
+place_ports {display[0]} W7
+place_ports {display[1]} W6
+place_ports {display[2]} U8
+place_ports {display[3]} V8
+place_ports {display[4]} U5
+place_ports {display[5]} V5
+place_ports {display[6]} U7
+place_ports {display[7]} V7
+place_ports Reset V17
+set_property package_pin "" [get_ports [list  CLK]]
+place_ports CLK T17
+startgroup
+set_property package_pin "" [get_ports [list  CLK]]
+place_ports button T17
+endgroup
+file mkdir D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new
+close [ open D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new/constrants.xdc w ]
+add_files -fileset constrs_1 D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new/constrants.xdc
+set_property target_constrs_file D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.srcs/constrs_1/new/constrants.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 21 16:11:54 2024] Launched synth_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/synth_1/runme.log
+[Sat Dec 21 16:11:54 2024] Launched impl_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/runme.log
+reset_run synth_1
+place_ports CLK W5
+save_constraints -force
+launch_runs impl_1 -jobs 10
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 21 16:13:06 2024] Launched synth_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/synth_1/runme.log
+[Sat Dec 21 16:13:06 2024] Launched impl_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Dec 21 16:14:48 2024] Launched impl_1...
+Run output will be captured here: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183713381A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713381A
+set_property PROGRAM.FILE {D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.runs/impl_1/basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183713381A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 16:51:13 2024...

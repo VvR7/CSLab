@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Dec 17 18:10:06 2024
+# Process ID: 31948
+# Current directory: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29376 D:\college\Computer_Lab\Multi_CPU\CPU_basys3\CPU_basys3\CPU_basys3.xpr
+# Log file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/vivado.log
+# Journal file: D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/college/Computer_Lab/Multi_CPU/CPU_basys3/CPU_basys3/CPU_basys3.xpr
+update_compile_order -fileset sources_1
